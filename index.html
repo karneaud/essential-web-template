@@ -74,14 +74,15 @@
 	<table class="table"></table>	
 </div></article></section></main>
   <footer></footer>
-<script src="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
+<script src="https://raw.githack.com/Mobius1/Vanilla-DataTables/master/src/vanilla-dataTables.js" type="text/javascript"></script>
 <script>
   var table = new DataTable(".table", {
 	ajax: {
-		url: "https://script.google.com/macros/s/AKfycbx77KgS5yu1OKLMjP32DlRI5jrndw0I-HOGbpv59C7WVY2KEHyq/exec",
+		url: "https://script.google.com/macros/s/AKfycbz7X0b8AsN7JUez8LWBbqB9acqVRcf6Xan_MEPtg0pYQMV2g9U/exec",
 		content: {
-		    type: "json", // specify the content,
-		    headings: true
+		    type: "csv", // specify the content,
+		    headings: true,
+		    columnDelimiter:"|"
 		}
 	} 
 });
