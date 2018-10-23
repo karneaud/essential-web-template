@@ -84,7 +84,19 @@
 		    headings: true,
 		    columnDelimiter:"|" 
 		}
-	} 
+	} ,
+	  columns: [
+      {
+         select: 3,
+         type: "date",
+         format: "hh:mm a"
+      },
+		  {
+         select: 2,
+         type: "date",
+         format: "hh:mm a"
+      }
+   ]
 });
 
 // Remove demo loader
